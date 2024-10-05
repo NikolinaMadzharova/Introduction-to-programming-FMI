@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    int a = n / 3;
+    int sum = (2*3 + 3 * (a - 1)) * a / 2;
+
+    cout << sum << endl;
+}
