@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    int a, b, c, d, e;
+    cin >> a >> b >> c >> d >> e;
+
+    int sumOdd = 0;
+
+    bool isAOdd = a % 2 == 1;
+    sumOdd += isAOdd * a;
+
+    bool isBOdd = b % 2 == 1;
+    sumOdd += isBOdd * b;
+
+    bool isCOdd = c % 2 == 1;
+    sumOdd += isCOdd * c;
+
+    bool isDOdd = d % 2 == 1;
+    sumOdd += isDOdd * d;
+
+    bool isEOdd = e % 2 == 1;
+    sumOdd += isEOdd * e;
+
+    cout << sumOdd << endl;
+
+}
+
