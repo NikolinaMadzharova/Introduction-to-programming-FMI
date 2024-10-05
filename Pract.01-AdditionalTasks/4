@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double a, b, c;
+    cin >> a >> b >> c;
+
+    bool first = a < b + c;
+    bool second = b < a + c;
+    bool third = c < a + b;
+
+    cout << (first && second && third);
+}
