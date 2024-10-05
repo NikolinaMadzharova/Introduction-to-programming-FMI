@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cin >> n;
+
+	bool isASingleDigitNum = n<=9;
+	bool isATwoDigitNum = n>=10 && n<=99;
+	bool isBigger = n>=100;
+
+	int newNum = isASingleDigitNum * n + isATwoDigitNum * (n % 10 + 1) +isBigger*(n/10);
+	cout << newNum;
+
+
+
+
+
+}
