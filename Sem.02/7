@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+
+int main()
+{
+	double r, x, y;
+	std::cin >>r>> x >> y;
+	const double EPSILON = 0.00000001;
+
+	double distance = sqrt(x * x + y * y);
+	if (abs(distance - sqrt(r * r)) <=EPSILON) {
+		std::cout<<"On the circle";
+
+	}else if (distance - sqrt(r * r) > 0) {
+        std::cout<<"Out of the circle";
+	}else {
+		std::cout<<"In the circle";
+	}
+
+}
