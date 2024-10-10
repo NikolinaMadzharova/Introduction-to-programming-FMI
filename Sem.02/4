@@ -1,0 +1,32 @@
+#include <iostream>
+
+int main()
+{
+	char figure;
+	std::cin >> figure;
+	const double PI = std::atan(1.0) * 4;
+
+	if (figure == 's') {
+		double side;
+		std::cin >> side;
+		std::cout << side * side;
+
+	}else if(figure == 'r') {
+		double sideA, sideB;
+		std::cin >> sideA >> sideB;
+		std::cout << sideA * sideB;
+
+	}
+	else if (figure == 'c') {
+		double r;
+		std::cin >> r;
+		std::cout << r*r*PI;
+
+	}
+	else if (figure == 't') {
+		double side, height;
+		std::cin >> side >> height;
+		std::cout << side * height / 2;
+
+	}
+}
