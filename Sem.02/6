@@ -1,0 +1,10 @@
+#include <iostream>
+
+int main()
+{
+	int n1, n2, n3, n4, n5;
+	std::cin >> n1 >> n2 >> n3 >> n4 >> n5;
+	bool isSaw = (n2 <= n1 && n2 <= n3 && n3 >= n4 && n4 <= n5) || (n2>=n1 && n2>=n3 && n3<=n4 && n4>=n5);
+
+	std::cout << (isSaw ? "yes" : "no");
+}
