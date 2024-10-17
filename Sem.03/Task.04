@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    unsigned int a, b;
+    cin >> a >> b;
+    //Euclidean algorithm - takes two numbers and finds the GCD between them
+    if (b > a) {
+        unsigned int temp = a;
+        a = b;
+        b = temp;
+    }
+
+    while (b != 0) {
+        unsigned int remainder = a % b;
+        a = b;
+        b = remainder;
+    }
+    cout << a;
+}
