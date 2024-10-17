@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	unsigned int n, k;
+	cin >> n >> k;
+
+	//find least common multiple
+	int lcmCandidate = (n > k)?n:k;
+
+	while ((lcmCandidate%n!=0) || (lcmCandidate%k !=0)){
+		lcmCandidate++;
+
+	}
+	cout << lcmCandidate;
+}
