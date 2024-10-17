@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    unsigned num;
+    cin >> num;
+    int reversed = 0;
+
+
+    while (num!=0) {
+        int lastDigit = num % 10;
+        num /= 10;
+        (reversed *= 10) += lastDigit;
+    }
+    cout << ++reversed<<endl;
+    
+}
