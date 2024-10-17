@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cin >> n;
+
+	int mostCommonDigit = -1;
+	int mostCommonOccurences = 0;
+
+	for (int currentDigit = 0; currentDigit <= 9; currentDigit++) {
+		int copyOfN = n;
+		int currentDigitOccurences = 0;
+		while (copyOfN != 0) {
+			int lastDigit = copyOfN % 10;
+			if (lastDigit == currentDigit) {
+				currentDigitOccurences++;
+			}
+			copyOfN /= 10;
+		}
+
+		if (currentDigitOccurences > mostCommonOccurences) {
+			mostCommonOccurences = currentDigitOccurences;
+			mostCommonDigit = currentDigit;
+		}
+	}
+	cout<< mostCommonDigit << endl;
+}
+
